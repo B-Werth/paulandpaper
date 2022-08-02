@@ -12,11 +12,13 @@ datasource db {
   referentialIntegrity = "prisma"
 }
 
-model BookSuggestion{
+model NewsCards{
   id Int @id @default(autoincrement())
-  bookTitle String
-  bookAuthor String
-  bookgay     String
+
+  newsTitle String
+  newsImage String
+
+  newsText String
   
 
 }
