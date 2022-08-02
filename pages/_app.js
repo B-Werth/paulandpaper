@@ -1,12 +1,15 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+
 import CssBaseline from "@mui/material/CssBaseline";
-import { red } from "@mui/material/colors";
+import { red, orange } from "@mui/material/colors";
 import Navbar from "../components/navbar";
 import News from "./news";
 
+import Button from "@mui/material/Button";
+
 const darktheme = createTheme({
   palette: {
-    mode: "dark",
+    mode: "light",
     primary: {
       main: red[500],
     },
@@ -19,6 +22,9 @@ function MyApp({ Component, pageProps }) {
       <CssBaseline />
       <Navbar />
       <News />
+      <Button variant="solid" color="red">
+        hi
+      </Button>
     </ThemeProvider>
   );
 }
